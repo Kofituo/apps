@@ -1,9 +1,9 @@
 {
-  "short_name": "Polkadot Apps",
-  "name": "Apps for interacting with a Polkadot node",
+  "short_name": "Xorion Scan",
+  "name": "Apps for interacting with the Xorion Node",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
