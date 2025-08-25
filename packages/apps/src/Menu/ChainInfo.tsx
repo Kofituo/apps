@@ -18,6 +18,7 @@ interface Props {
 function ChainInfo ({ className }: Props): React.ReactElement<Props> {
   const { api, isApiReady } = useApi();
   const runtimeVersion = useCall<RuntimeVersion>(isApiReady && api.rpc.state.subscribeRuntimeVersion);
+  const chanType = useCall<RuntimeVersion>(isApiReady && api.rpc.system.chainType);
   const { ipnsChain } = useIpfs();
   const [isEndpointsVisible, toggleEndpoints] = useToggle();
   const canToggle = !ipnsChain;
@@ -31,8 +32,8 @@ function ChainInfo ({ className }: Props): React.ReactElement<Props> {
         <ChainImg />
         <div className='info media--1000'>
           <Chain className='chain' />
-          {runtimeVersion && (
-            <div className='runtimeVersion'>{runtimeVersion.specName.toString()}/{runtimeVersion.specVersion.toNumber()}</div>
+          {runtimeVersion && chanType && (
+            <div className='runtimeVersion'>{chanType.toString()}/{runtimeVersion.specVersion.toNumber()}</div>
           )}
           <BestNumber
             className='bestNumber'
