@@ -4,65 +4,7 @@
 import type {EndpointOption} from './types.js';
 
 import {
-  chains3dpassSVG,
-  chainsAlephSVG,
-  chainsAnalogSVG,
-  chainsBittensorPNG,
-  chainsChainflipPNG,
-  chainsCommuneaiPNG,
-  chainsCreditcoinPNG,
-  chainsDebioSVG,
-  chainsFragnovaPNG,
-  chainsJurPNG,
-  chainsLiberlandPNG,
-  chainsLogionPNG,
-  chainsMyriadPNG,
-  chainsSpannerPNG,
-  chainsTanglePNG,
-  chainsTorusPNG,
-  chainsVaraPNG,
-  chainsVtbPNG
-} from '../ui/logos/chains/index.js';
-import {
-  nodesAresOdysseySVG,
-  nodesAutonomysPNG,
-  nodesCentrifugePNG,
-  nodesCereSVG,
-  nodesChainxSVG,
-  nodesCompetitorsClubPNG,
-  nodesCrownSterlingPNG,
-  nodesCrustSVG,
-  nodesDatahighwayPNG,
-  nodesDockPNG,
-  nodesEdgewareWhitePNG,
-  nodesEfinitySVG,
-  nodesElysiumPNG,
-  nodesHanyonycashPNG,
-  nodesHumanodePNG,
-  nodesInnovatorPNG,
-  nodesJoystreamSVG,
-  nodesKulupuSVG,
-  nodesKusariSVG,
-  nodesMathSVG,
-  nodesMinixPNG,
-  nodesNftmartPNG,
-  nodesNodleSVG,
-  nodesPolkadexSVG,
-  nodesPolymeshSVG,
-  nodesRiochainSVG,
-  nodesRobonomicsSVG,
-  nodesSherpaxPNG,
-  nodesSoraSubstrateSVG,
-  nodesStafiPNG,
-  nodesSubgameSVG,
-  nodesSubsocialSVG,
-  nodesSwapdexSVG,
-  nodesTanssiSVG,
-  nodesTernoaSVG,
-  nodesThebifrostPNG,
-  nodesTscsPNG,
-  nodesUniartsPNG,
-  nodesUnitnetworkPNG, nodesXorionPNG
+    nodesXorionPNG
 } from '../ui/logos/nodes/index.js';
 
 export * from './productionRelayKusama.js';
@@ -76,17 +18,17 @@ export * from './productionRelayPolkadot.js';
 //
 // IMPORTANT: Alphabetical based on text
 export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
-  {
-    info: 'xorion',
-    providers: {
-      'Xorion Main': 'wss://node01.xorion.network',
-      'Xorion One': 'wss://node02.xorion.network',
-      'Xorion Two': 'wss://node09.xorion.network'
-    },
-    text: 'Xorion',
-    ui: {
-      color: '#5236a3',
-      logo: nodesXorionPNG
+    {
+        info: 'xorion',
+        providers: {
+            'Xorion Main': 'wss://node01.xorion.network',
+            'Xorion One': 'wss://node02.xorion.network',
+            'Xorion Two': 'wss://node09.xorion.network'
+        },
+        text: 'Xorion',
+        ui: {
+            color: '#5236a3',
+            logo: nodesXorionPNG
+        }
     }
-  }
 ];
