@@ -181,6 +181,7 @@ export { nodesVFlowPNG } from './generated/VFlowPNG.js';
 export { nodesWeb3gamesSVG } from './generated/web3gamesSVG.js';
 export { nodesWestendColourSVG } from './generated/westend_colourSVG.js';
 export { nodesXodePNG } from './generated/xodePNG.js';
+export { nodesXorionPNG } from './generated/xorionPNG.js';
 export { nodesYerbanetworkPNG } from './generated/yerbanetworkPNG.js';
 export { nodesZCloakSVG } from './generated/zCloakSVG.js';
 export { nodesZeitgeistPNG } from './generated/zeitgeistPNG.js';
