@@ -334,10 +334,7 @@ function Endpoints ({ className = '', offset, onClose }: Props): React.ReactElem
     [hasUrlChanged, apiUrl, isUrlValid, isLocalFork]
   );
 
-  const canLocalFork = useMemo(
-    () => isLocalForkDisabled(hasUrlChanged, apiUrl, isUrlValid, isLocalFork),
-    [hasUrlChanged, apiUrl, isUrlValid, isLocalFork]
-  );
+  const canLocalFork = true;
 
   return (
     <StyledSidebar
